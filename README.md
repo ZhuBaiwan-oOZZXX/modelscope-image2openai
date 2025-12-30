@@ -2,6 +2,10 @@
 
 一个将 ModelScope 图像生成 API 适配为 OpenAI 格式的代理服务。通过一个 python 脚本，您可以使用熟悉的 `/chat/completions` 格式来调用 ModelScope 的图像生成服务。
 
+> [!TIP]
+> - Python 脚本运行方式：安装 `requirements.txt` 中的依赖后，运行 `main.py` 即可。
+> - 除了 Python 版本外，本项目还提供了 Cloudflare Worker 版本（`worker.js`），可以直接部署到 [Cloudflare Workers](https://dash.cloudflare.com)，无需自建服务器，使用更加方便。
+
 ## 支持的模型
 
 | 模型 | 类型 |
