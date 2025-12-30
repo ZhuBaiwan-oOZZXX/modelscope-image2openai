@@ -29,6 +29,8 @@
 | guidance | float | 提示词引导系数 | [1.5, 20] |
 | loras | string/dict | LoRA模型 | 多LoRA权重总和须为1.0，最多6个 |
 
+这些参数来自魔搭官方文档：[ModelScope 文档](https://modelscope.cn/docs/model-service/API-Inference/intro)
+
 > [!IMPORTANT]
 > - `prompt`：通过 messages 中最后一条用户消息的文本内容提取
 > - `image_url`：通过 messages 中的 image_url 类型消息提取（**限1张**，base64会自动上传图床转换为URL）
@@ -126,8 +128,6 @@ python main.py
 服务默认运行在 `http://localhost:8000`
 
 获取 ModelScope 访问令牌：[ModelScope 控制台](https://modelscope.cn/my/myaccesstoken)
-
-魔搭官方文档：[ModelScope 文档](https://modelscope.cn/docs/model-service/API-Inference/intro)
 
 ## Cherry Studio 中使用
 
